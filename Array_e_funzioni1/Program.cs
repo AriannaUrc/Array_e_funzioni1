@@ -70,6 +70,7 @@ namespace Array_e_funzioni
         {
             bool max = false;
             for (int i = lenght; i > pos_agg; i--)
+            {
                 if (pos_agg <= lenght)
                 {
                     array[i + 1] = array[i];
@@ -78,7 +79,9 @@ namespace Array_e_funzioni
                 {
                     max = true;
                 }
-            array[pos_agg] = ele_agg;
+            }
+                
+            array[pos_agg-1] = ele_agg;
             lenght++;
             return max;
         }
