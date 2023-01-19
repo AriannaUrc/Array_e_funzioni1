@@ -69,7 +69,7 @@ namespace Array_e_funzioni
         static bool add(ref int[] array, int ele_agg, ref int lenght, int pos_agg)
         {
             bool max = false;
-            for (int i = lenght; i > pos_agg; i--)
+            for (int i = lenght; i >= pos_agg-1; i--)
             {
                 if (pos_agg <= lenght)
                 {
